@@ -80,9 +80,7 @@
           <input type="file" name="avatar">
         </div>
         <label>
-          <input type="text" name="username"
-                 maxlength="25" required
-                 class="setup-user-name" value="Синий Пендальф"/>
+          <input type="text" name="username" minlength="2" maxlength="25" required class="setup-user-name" value="Синий Пендальф"/>
         </label>
       </div>
 
@@ -181,7 +179,7 @@
   </div>
 </template>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
   var fireballSize = 22;
   var getFireballSpeed = function (left) {
     return left ? 5 : 2;
@@ -197,7 +195,8 @@
   var getWizardY = function (height) {
     return height / 3;
   };
-</script>
+</script> -->
+
 <script src="js/setup.js"></script>
 <script src="js/stat.js"></script>
 <script src="js/game.js"></script>
