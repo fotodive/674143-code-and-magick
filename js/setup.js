@@ -12,13 +12,12 @@ var setupOpen = document.querySelector('.setup-open');
 var setupClose = setup.querySelector('.setup-close');
 var userNameInput = setup.querySelector('.setup-user-name');
 var setupPlayer = document.querySelector('.setup-player');
-
 document.querySelector('.setup-wizard-form').setAttribute('action', 'https://js.dump.academy/code-and-magick');
 document.querySelector('.setup-open-icon').setAttribute('tabindex', 0);
 setupClose.setAttribute('tabindex', 0);
 
 var onPopupEscPress = function (evt) {
-  if ((evt.keyCode === ESC_KEYCODE)&(evt.target !== userNameInput)) {
+  if ((evt.keyCode === ESC_KEYCODE) & (evt.target !== userNameInput)) {
     closePopup();
   }
 };
